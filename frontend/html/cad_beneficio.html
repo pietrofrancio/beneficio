@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/cad_beneficio.js" defer></script>
+    <title>Painel de Cadastro</title>
+</head>
+<body>
+    <h1>Painel de Cadastro</h1>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../html/cad_beneficio.html">Cadastrar Benefício</a></li>
+            <li><a href="../html/list_beneficio.html">Listar Benefícios</a></li>
+            <li><a href="../html/consult_beneficio.html">Consultar Benefício</a></li>
+            <li><a href="../html/apagar_beneficio.html">Apagar Benefício</a></li>
+        </ul>
+    </nav>
+
+    <form>
+        <label for="nomeMotorista">Nome:</label><br>
+        <input type="text" id="nomeMotorista" placeholder="Digite o nome do motorista"><br><br>
+        
+        <label for="modeloVeiculo">Modelo do veículo:</label><br>
+        <input type="text" id="modeloVeiculo" placeholder="Digite o modelo do veículo"><br><br>
+
+        <label for="ajudaCustoFixa">Ajuda de custo fixa </label><br>
+        <input type="text" id="ajudaCustoFixa" placeholder="Digite o  valor do auxílio"><br><br>
+
+        <label for="pernoites">Pernoites:</label><br>
+        <input type="text" id="pernoites" placeholder="Digite o número de pernoites"><br><br>
+        
+        <label for="categoriaRota">Categoria da Rota:</label><br>
+        <select id="categoriaRota">
+            <option value="REGIONAL">Regional</option>
+            <option value="INTERSTADUAL">Interestadual</option>
+            <option value="INTERNACIONAL">Internacional</option>
+        </select><br><br>
+
+        <button id="btn">Cadastrar</button>
+    </form>
+        <div id="resposta"></div>
+        
+</body>
+</html>
